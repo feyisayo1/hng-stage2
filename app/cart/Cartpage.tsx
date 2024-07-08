@@ -24,7 +24,7 @@ export function SingleItem() {
                 <h2>Nike High Tops</h2>
                 <div className='inline-flex items-center gap-1'>
                   <p>XL/ </p>
-                  <div className=' [&>*]:rounded-full border [&>*]:py-2 [&>*]:px-2'>
+                  <div className=' [&>*]:rounded-full [&>*]:py-2 [&>*]:px-2'>
                     <p className='bg-[#4F4949]'></p>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ export function SingleItem() {
                 <p>{number}</p>{" "}
                 <button onClick={Remove}>-</button>
               </div>
-              <p><span className='pr-4'>$1,500</span> <span className='border-2 border-black rounded-[50%] py-[0.1rem] px-[0.2rem] text-[0.6rem] '>&#10006;</span></p>
+              <button><span className='pr-4'>$1,500</span> <span className='border-2 border-black rounded-[50%] py-[0.1rem] px-[0.2rem] text-[0.6rem] '>&#10006;</span></button>
               {/* <p></p> */}
             </div>
         </div>
@@ -81,7 +81,7 @@ const cartpage = () => {
           </div>
           <div>
             <Link href={"/checkout"}>
-              <button className='bg-[#FF5714] text-white px-4 py-2 rounded-[50px] text-[12px] font-bold'>
+              <button className='bg-[#FF5714] text-white px-6 py-4 rounded-[50px] text-[12px] font-bold'>
                   CHECK OUT
               </button>
             </Link>

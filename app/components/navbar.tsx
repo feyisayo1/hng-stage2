@@ -39,9 +39,25 @@ const NavBar = () => {
                 <Link href={""}>
                     <Heart size="20" color="#000000"/>
                 </Link>
-                <Link href={"./cart"}>
-                    <ShoppingCart size="20" color="#000000"/>
-                </Link>
+
+                {pathname === "/cart" ? 
+                     <Link href={"./cart"} className='relative'>
+                        <ShoppingCart size="20" color="#000000"/>
+                        <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] py-[0.1rem] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
+                    </Link>
+                    : (pathname === "/checkout" ? 
+                        <Link href={"./cart"} className='relative'>
+                            <ShoppingCart size="20" color="#000000"/>
+                            <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] py-[0.1rem] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
+                        </Link>
+                        :
+                        <Link href={"./cart"} className='relative'>
+                            <ShoppingCart size="20" color="#000000"/>
+                        </Link>
+                    )
+                   
+                }
+              
             </div>
      
         </nav>
