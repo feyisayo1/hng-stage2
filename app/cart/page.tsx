@@ -1,8 +1,13 @@
 import React from 'react'
+import Cartpage from './Cartpage'
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <>
+        <section className='w-4/5 m-auto'>
+            <Cartpage/>
+        </section>
+    </>
   )
 }
 

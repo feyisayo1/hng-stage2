@@ -82,12 +82,12 @@ const SideBar = () => {
             <h1 className='pb-4 pt-8 font-bold'>
               Size <span className='inline-flex align-middle'><ArrowDown2 size="15" color="#000000"/></span>
             </h1>
-            <div className=' inline-flex [&>*]:border gap-2 [&>*]:rounded-full [&>*]:py-4 [&>*]:px-4'>
+            <div className=' inline-flex gap-2 [&>*]:rounded-full [&>*]:py-4 [&>*]:px-4'>
               <p className='bg-[#D9D9D9]'></p>
               <p className='bg-[#0038FF]'></p>
               <p className='bg-[#000]'></p>
             </div>
-            <div className=' inline-flex [&>*]:border gap-2 [&>*]:rounded-full  [&>*]:py-4 [&>*]:px-4'>
+            <div className=' inline-flex gap-2 [&>*]:rounded-full  [&>*]:py-4 [&>*]:px-4'>
               <p className='bg-[#4F4949]'></p>
               <p className='bg-[#054E53]'></p>
             </div>
