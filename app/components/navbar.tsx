@@ -1,0 +1,55 @@
+import React from 'react'
+import Link from "next/link";
+import logo from '../Group.png'
+import Image from "next/image";
+import { SearchNormal1, ShoppingCart, Heart, ArrowRight2} from 'iconsax-react';
+
+
+
+const NavBar = () => {
+  return (
+    <>
+        <nav className='flex justify-between items-center py-4 w-4/5 m-auto'>
+            <div>
+                <Image 
+                    src={logo} 
+                    alt='logo' 
+                    width={65.89}
+                    height={56.01}
+                />
+                
+            </div>
+
+            <div className='flex justify-between w-[35%]'>
+                <Link href={"/"}>Home</Link>
+                <Link href={"/"} className="border-b-4 w-fit border-[#FF7943]">Shop</Link>
+                <Link href={"/"}>Pages</Link>
+                <Link href={"/"}>Blog</Link>
+                <Link href={"/"}>Contacts</Link>
+            </div>
+
+            <div className='flex justify-between  w-[15%]'>
+                <SearchNormal1 size="20" color="#000000"/>
+                <Heart size="20" color="#000000"/>
+                <ShoppingCart size="20" color="#000000"/>
+            </div>
+     
+        </nav>
+
+        <div className='bg-[#FF5714]'>
+            <div className='w-4/5 m-auto  py-8'>
+                <h1 className='font-[800] text-[40px]'>Shop</h1>
+                <p>
+                    Home 
+                    <span className='inline-flex align-middle'>
+                        <ArrowRight2 size="15" color="#000"/>
+                    </span>    
+                    Shop
+                </p>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default NavBar
