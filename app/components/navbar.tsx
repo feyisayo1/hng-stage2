@@ -43,12 +43,12 @@ const NavBar = () => {
                 {pathname === "/cart" ? 
                      <Link href={"./cart"} className='relative'>
                         <ShoppingCart size="20" color="#000000"/>
-                        <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] py-[0.1rem] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
+                        <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
                     </Link>
                     : (pathname === "/checkout" ? 
                         <Link href={"./cart"} className='relative'>
                             <ShoppingCart size="20" color="#000000"/>
-                            <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] py-[0.1rem] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
+                            <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] px-1 font-light text-[10px] rounded-[50%]'> 3 </span>
                         </Link>
                         :
                         <Link href={"./cart"} className='relative'>

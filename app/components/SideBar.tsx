@@ -78,9 +78,9 @@ const SideBar = () => {
         </div>
         
         <div>
-          <div className='flex flex-col gap-2 py-8 '>
+          <div className='flex flex-col gap-4 py-8 '>
             <h1 className='pb-4 pt-8 font-bold'>
-              Size <span className='inline-flex align-middle'><ArrowDown2 size="15" color="#000000"/></span>
+              Colors <span className='inline-flex align-middle'><ArrowDown2 size="15" color="#000000"/></span>
             </h1>
             <div className=' inline-flex gap-2 [&>*]:rounded-full [&>*]:py-4 [&>*]:px-4'>
               <p className='bg-[#D9D9D9]'></p>

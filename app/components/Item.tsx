@@ -12,7 +12,7 @@ const Item = () => {
                 <Image 
                     src={SingleItem} 
                     alt='logo' 
-                    className=' w-[323px] h-[258px]'
+                    className=' w-[323px] h-[258px] max-xl:w-[311px] max-xl:h-[250px]'
                 />
                 <p>Flat Palms Noir</p>
                 <div className='flex justify-between items-center'>
@@ -42,3 +42,5 @@ const Item = () => {
 }
 
 export default Item
+
+// 311 250
