@@ -17,9 +17,9 @@ export function SingleItem() {
 
   return(
       <>
-        <div className='flex justify-between items-center  mt-10 mb-10 shadow-xl px-4 py-4 relative'>
+        <div className='flex justify-between items-center  mt-5 mb-5 max-[580px]:shadow-xl px-4 py-4 relative'>
             <div className='flex justify-between items-center w-[40%] max-md:w-[45%]'>
-              <Image src={shoe} alt='shoe' className='w-[50%]'/>
+              <Image src={shoe} alt='shoe' className='max-[580px]:w-[50%]'/>
               <div className='max-md:flex max-md:flex-col max-md:gap-3'>
                 <h2 className='max-md:hidden'>Nike High Tops</h2>
                 <h2 className='md:hidden max-sm:block'>Air force 1</h2>
