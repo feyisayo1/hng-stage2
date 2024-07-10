@@ -76,19 +76,20 @@ const cartpage = () => {
         <SingleItem/>
         <SingleItem/>
        
+        <p  className='text-end'>Total Price : 10,000</p>
 
-       <div className='flex justify-center gap-32 items-center pb-40 '>
-          <div className='inline-flex gap-8 bg-[#E6E6E6] rounded-3xl py-4 px-8'>
+       <div className='flex justify-center gap-32 items-center pb-40 max-[800px]:gap-12 max-[515px]:gap-6 '>
+          <div className='inline-flex gap-8 bg-[#E6E6E6] rounded-3xl py-4 px-8 max-[800px]:py-2 max-[800px]:px-4 max-[800px]:gap-4 max-[580px]:hidden'>
             <p>Promo Code</p>
             <p className='text-green-500 font-semibold'>&#10003;</p>
           </div>
-          <div>
+          <div className='max-[580px]:hidden'>
             <p>TOTAL</p>
             <p>$10,000</p>
           </div>
-          <div>
+          <div className='max-[580px]:pt-4'>
             <Link href={"/checkout"}>
-              <button className='bg-[#FF5714] text-white px-6 py-4 rounded-[50px] text-[12px] font-bold'>
+              <button className='bg-[#FF5714] text-white px-6 py-4 rounded-[50px] text-[12px] font-bold  max-[800px]:py-2  max-[800px]:px-4 max-[580px]:w-fit max-[580px]:pr-[11rem] max-[580px]:pl-[11rem] max-[580px]:rounded max-[580px]:pt-2 max-[580px]:pb-2'>
                   CHECK OUT
               </button>
             </Link>
