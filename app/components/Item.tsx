@@ -4,6 +4,7 @@ import Rating from '../Rating.png'
 import smallcircle from '../smallcircle.png'
 import Image from 'next/image'
 import { ShoppingCart } from 'iconsax-react'
+import Link from 'next/link'
 
 const Item = () => {
   return (
@@ -29,12 +30,15 @@ const Item = () => {
                 </div>
                 <div className='flex justify-between items-center'>
                     <p className='text-[20px] font-normal max-sm:text-[15px]'>$140.32</p>
-                    <button className='bg-[#FF7943] text-white px-4 py-2 rounded-[50px] text-[12px] font-bold max-[575px]:text-[10px] max-[575px]:px-2 max-[575px]:py-1'>
-                        Add to Cart 
-                        <span className='inline-flex align-middle pl-2'>
-                            <ShoppingCart size="18" color="#000"/>
-                        </span>
-                    </button>
+                    <Link href={"./cart"}>
+                        <button className='bg-[#FF7943] text-white px-4 py-2 rounded-[50px] text-[12px] font-bold max-[575px]:text-[10px] max-[575px]:px-2 max-[575px]:py-1'>
+                            Add to Cart 
+                            <span className='inline-flex align-middle pl-2'>
+                                <ShoppingCart size="18" color="#000"/>
+                            </span>
+                        </button>
+                    </Link>
+                 
                 </div>
         </div>
     </section>
