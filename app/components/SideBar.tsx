@@ -5,18 +5,18 @@ import { SearchNormal1,  ArrowDown2 } from "iconsax-react";
 const SideBar = () => {
   return (
     <>
-      <section className=''>
-        <form className="h-[34px] w-[260px] px-3 gap-2 flex relative items-center border-[2px] rounded max-lg:hidden">
-          <input
-            type="text"
-            name="search"
-            placeholder="Search"
-            className="w-full h-full outline-none text-[14px]"
-          />
-          <button className="w-fit">
-            <SearchNormal1 size="20" color="#B3B3B3"/>
-          </button>
-        </form>
+      <section className=' max-[893px]:hidden'>
+      <form className="h-[34px] w-[200px] px-3 gap-2 flex relative items-center border-[2px] rounded max-md:hidden">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search"
+          className="w-full h-full outline-none text-[14px]"
+        />
+        <button className="w-fit">
+          <SearchNormal1 size="20" color="#B3B3B3" />
+        </button>
+      </form>
 
         <div>
           <div className='flex flex-col gap-2'>

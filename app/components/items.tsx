@@ -14,15 +14,15 @@ const Items = () => {
             </p>
         </div>
         
-        <div className='flex justify-between '>
+        <div className='flex justify-between max-[575px]:gap-4 '>
             <Item/>
             <Item/>
         </div>
-        <div className='flex justify-between '>
+        <div className='flex justify-between max-[575px]:gap-4 '>
             <Item/>
             <Item/>
         </div>
-        <div className='flex justify-between '>
+        <div className='flex justify-between max-[575px]:gap-4 '>
             <Item/>
             <Item/>
         </div>
