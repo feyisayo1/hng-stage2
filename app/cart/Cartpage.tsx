@@ -18,7 +18,7 @@ export function SingleItem() {
   return(
       <>
         <div className='flex justify-between items-center  mt-5 mb-5 max-[580px]:shadow-xl px-4 py-4 relative'>
-            <div className='flex justify-between items-center w-[40%] max-md:w-[45%]'>
+            <div className='flex justify-between items-center w-[40%] max-md:w-[45%] max-[580px]:w-[50%]'>
               <Image src={shoe} alt='shoe' className='max-[580px]:w-[50%]'/>
               <div className='max-md:flex max-md:flex-col max-md:gap-3'>
                 <h2 className='max-md:hidden'>Nike High Tops</h2>
@@ -46,7 +46,7 @@ export function SingleItem() {
                 {/* <p></p> */}
               </div>
 
-        <span className='absolute top-[-5px] right-[-4px] bg-[#FF5714] px-1 font-light text-[10px] rounded-[50%] min-[580px]:hidden'> &#10006; </span>
+        <span className='absolute top-[20px] right-[-5px] bg-[#FF5714] px-1 font-light text-[10px] rounded-[50%] min-[580px]:hidden'> &#10006; </span>
         
         </div>
 

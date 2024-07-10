@@ -12,7 +12,7 @@ import Link from "next/link";
 export function SingleItem() {
   return(
       <>
-        <div className='flex justify-between items-center mt-10 mb-10'>
+        <div className='flex justify-between items-center mt-10 mb-1 max-[580px]:shadow-xl' >
             <div className='flex justify-between items-center w-4/5 '>
               <Image src={shoe} alt='shoe'/>
               <div>
@@ -31,7 +31,7 @@ export function SingleItem() {
               </div>
             </div>
         </div>
-        <hr className='h-[2px] bg-black mb-16'/>
+        <hr className='h-[2px] bg-black mb-16  max-[580px]:hidden'/>
 
       </>
 
@@ -43,10 +43,10 @@ const Checkout = () => {
   return (
     <>
     <section className='w-4/5 m-auto'>
-      <p className='pb-3 pt-40'>Contact Information</p>
-      <hr className='h-[2px] bg-black mb-4'/>
+      <p className='pb-3 pt-40  max-[580px]:hidden'>Contact Information</p>
+      <hr className='h-[2px] bg-black mb-4  max-[580px]:hidden'/>
 
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-4  max-[580px]:hidden'>
         <h3>HNG INTERN</h3>
         <h3>8, Kolawole street ijesha
           <span className='flex flex-col leading-3'> Lagos State</span>
@@ -55,10 +55,10 @@ const Checkout = () => {
         <h3>Hng11@gmail.com</h3>
       </div>
 
-      <p className='pt-6 pb-3'>Payment Details</p>
-      <hr className='h-[2px] bg-black mb-4'/>
+      <p className='pt-6 pb-3  max-[580px]:hidden'>Payment Details</p>
+      <hr className='h-[2px] bg-black mb-4  max-[580px]:hidden'/>
       <form action="#">
-        <div className="flex justify-between gap-4 w-full max-sm:flex-col pt-10">
+        <div className="flex justify-between gap-4 w-full max-sm:flex-col pt-10  max-[580px]:hidden">
           <label className="w-full">
             <span>Name on card</span>
             <input
@@ -87,7 +87,7 @@ const Checkout = () => {
               
           </label>
         </div>
-        <div className="flex justify-between gap-4 w-full max-sm:flex-col pt-10">
+        <div className="flex justify-between gap-4 w-full max-sm:flex-col pt-10  max-[580px]:hidden">
           <label className="w-2/4">
             <span>Expiraton date</span>
             <input
@@ -112,8 +112,8 @@ const Checkout = () => {
       </form>
 
 
-      <p className='pb-3 pt-20'>Your Order</p>
-      <hr className='h-[2px] bg-black mb-16'/>
+      <p className='pb-3 pt-20  max-[580px]:hidden'>Your Order</p>
+      <hr className='h-[2px] bg-black mb-16  max-[580px]:hidden'/>
 
       <SingleItem/>
       <SingleItem/>
@@ -133,7 +133,7 @@ const Checkout = () => {
           <p>$10,000</p>
         </div>
       </div>
-      <hr className='h-[2px] bg-black mb-16'/>
+      <hr className='h-[2px] bg-black mb-16  max-[580px]:hidden'/>
       <div className='pb-10 flex justify-center'>
         <Link href={"/checkout"}>
           <button className=' bg-[#FF5714] text-white px-6 py-4 rounded-[50px] text-[12px] font-bold'>
