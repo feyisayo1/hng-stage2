@@ -46,7 +46,7 @@ export function SingleItem() {
                 {/* <p></p> */}
               </div>
 
-        <span className='absolute top-[20px] right-[-5px] bg-[#FF5714] px-1 font-light text-[10px] rounded-[50%] min-[580px]:hidden'> &#10006; </span>
+          <span className='absolute top-[20px] right-[-5px] bg-[#FF5714] px-1 max-[580px]:py-1 max-[580px]:px-1 font-light text-[10px] rounded-[50%] min-[580px]:hidden'> &#10006; </span>
         
         </div>
 
